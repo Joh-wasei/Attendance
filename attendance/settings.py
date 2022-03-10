@@ -54,7 +54,7 @@ ROOT_URLCONF = 'attendance.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [str(BASE_DIR.joinpath('template'))],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -78,7 +78,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'attendance_db',
         'USER': 'root',
-        'PASSWORD': 'XXXXXXXXX',
+        'PASSWORD': 'scF4JkmtUs8',
         'HOST': 'localhost',
         'PORT': '3306'
     }
